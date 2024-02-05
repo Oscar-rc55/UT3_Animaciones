@@ -1,0 +1,96 @@
+body{background-image: url(Imagenes/CampoFurbo.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;}
+
+.campo{position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 50vw;
+    display: grid;
+    z-index: 1;}
+
+img{width: 9.5vw;}
+
+.portero{position: fixed;
+    top: 27.5vw;
+    left: 1vw;
+    animation: 10s aparicion;}
+
+.central{position: fixed;
+    top: 28vw;
+    left: 17vw;
+    animation:10s noaparecer,10s 10s aparicion;}
+
+.latIzq{position: fixed;
+    top: 6vw;
+    left: 23vw;
+    animation:20s noaparecer,10s 20s aparicion;
+    transform: scale(1.2);}
+
+.latDer{position: fixed;
+    top: 50vw;
+    left: 23vw;
+    animation:30s noaparecer,10s 30s aparicion;}
+
+.mDef1{position: fixed;
+    top: 16vw;
+    left: 39vw;
+    animation:40s noaparecer,10s 40s aparicion;
+    transform: scale(1.4);}
+
+.mDef2{position: fixed;
+    top: 42vw;
+    left: 39vw;
+    animation:50s noaparecer,10s 50s aparicion;
+    transform: scale(1.4);}
+
+.medioIzq{position: fixed;
+    top: 5vw;
+    left: 55vw;
+    animation:60s noaparecer,10s 60s aparicion;
+    transform: scale(1.3);}
+
+.medioDer{position: fixed;
+        top: 60vw;
+        left: 55vw;
+        animation:70s noaparecer,10s 70s aparicion;
+        transform: scale(1.6);}
+
+.extIzq{position: fixed;
+    top: 13.5vw;
+    left: 72vw;
+    animation:80s noaparecer,10s 80s aparicion;
+    transform: scale(1.3);}
+
+.extDer{position: fixed;
+    top: 50vw;
+    left: 72vw;
+    animation:90s noaparecer,10s 90s aparicion;
+    transform: scale(1.3);}
+
+.delantero{position: fixed;
+        top: 27.5vw;
+        left: 87vw;
+        animation:100s noaparecer,10s 100s aparicion;}
+
+@keyframes aparicion {
+    
+    0%{top:-10vw;
+        left:47vw;}
+
+    50%{top:20vw;
+        left:47vw;
+        transform: scale(2);}
+}
+
+@keyframes noaparecer {
+
+    0%{visibility: hidden;}
+
+    100%{visibility: hidden;}
+}
+
+
